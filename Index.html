@@ -1,0 +1,52 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENDO</title>
+    <style>
+        body { background-color: #000; color: #fff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .search-container { padding: 15px; }
+        .search-bar { background-color: #202020; border-radius: 25px; padding: 12px 15px; display: flex; align-items: center; border: 1px solid #333; }
+        .search-bar input { background: transparent; border: none; color: white; width: 100%; margin-left: 10px; font-size: 16px; }
+        .product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 15px; }
+        .product-card { background-color: #1a1a1a; border-radius: 12px; overflow: hidden; padding-bottom: 10px; }
+        .product-image { background-color: #333; height: 180px; width: 100%; }
+        .product-info { padding: 10px; }
+        .title-line { height: 12px; background: #333; width: 80%; margin-bottom: 8px; border-radius: 4px; }
+        .price-line { height: 12px; background: #333; width: 40%; border-radius: 4px; }
+        .nav-bar { position: fixed; bottom: 0; width: 100%; background: #111; display: flex; justify-content: space-around; padding: 15px 0; border-top: 1px solid #333; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <div class="search-bar">
+            <span>🔍</span>
+            <input type="text" placeholder="Search on VENDO">
+        </div>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-image"></div>
+            <div class="product-info"><div class="title-line"></div><div class="price-line"></div></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"></div>
+            <div class="product-info"><div class="title-line"></div><div class="price-line"></div></div>
+        </div>
+    </div>
+
+    <div class="nav-bar">
+        <span>🏠 Home</span>
+        <span>👤 Profile</span>
+        <span>🔍 Search</span>
+        <span>🔔 Inbox</span>
+        <span>🏷️ Selling</span>
+    </div>
+
+</body>
+</html>
+```
